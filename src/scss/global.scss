@@ -27,3 +27,27 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 56px;
+  background: $blue4;
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  border-radius: 10px;
+  color: #fff;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    background: darken($blue4, 6);
+  }
+}

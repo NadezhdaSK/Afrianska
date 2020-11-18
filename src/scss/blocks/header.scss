@@ -1,0 +1,127 @@
+.header {
+    position: relative;
+    height: 100vh;
+    background: url(../img/header.svg) no-repeat calc(50% + 320px) calc(50% + 30px);
+
+    &__gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, #98C3E8 8.84%, rgba(152, 195, 232, 0) 31.12%);
+        opacity: 0.2;
+        z-index: -1;
+    }
+
+    &__wrap {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -140px;
+    }
+
+    &__nav-wrap {
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__btn-nav {
+        position: relative;
+        border: none;
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-color: #ffffff;
+        cursor: pointer;
+    }
+
+    &__nav {
+        position: absolute;
+        right: 0;
+        top: 85px;
+    }
+
+    &__nav--closed {
+        display: none;
+    }
+
+    &__nav--closed + &__btn-nav {
+        &::before {
+            position: absolute;
+            content: "";
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 24px;
+            height: 3px;
+            background-color: $blue3;
+            box-shadow: 0 7px 0 0 $blue3, 0 14px 0 0 $blue3;
+        }
+    } 
+
+    &__nav--opened + .header__btn-nav {
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            top: 15px;
+            left: 4px;
+            width: 24px;
+            height: 3px;
+            background-color: $blue3;
+        }
+      
+        &::before {
+            transform: rotate(45deg);
+        }
+      
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    &__nav-list {
+        padding: 20px 0;
+        margin: 0;
+        list-style: none;
+        background-color: #fff;
+        z-index: 100;
+    }
+
+    &__nav-link {
+        color: $blue1;
+        display: inline-block;
+        padding: 5px 20px;
+        width: 100%;
+        transition: .3s;
+        border-bottom: 1px solid $blue1;
+
+        &:hover {
+            background-color: $blue1;
+            color:#fff;
+        }
+    }
+
+    &__title {
+        width: 520px;
+        margin-bottom: 32px;
+        font-family: 'Galien', 'Arial', sans-serif;
+        font-size: 64px;
+        line-height: 74px;
+        letter-spacing: 0.04em;
+    }
+
+    &__descr {
+        margin-bottom: 70px;
+        width: 430px;
+        letter-spacing: 0.05%;
+        opacity: .6;
+    }
+}
