@@ -1,0 +1,93 @@
+.advantage {
+    margin: 180px 0 112px;
+
+    & .container {
+        position: relative;
+    }
+
+    &__title {
+        width: 360px;
+        color: $blue2;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__item {
+        width: 380px;
+        padding: 0 48px 48px;
+        box-shadow: $shadow-blue;
+        border-radius: 10px;
+        margin-bottom: 100px;
+    }
+
+    &__item:nth-child(even) {
+        transform: translateY(50%);
+        margin-right: 100px;
+    }
+
+    &__img-wrap {
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    &__img--woman {
+        height: 192px;
+    }
+
+    &__img--man {
+        margin: 0 auto 0 26px;
+    }
+
+    &__img--girl {
+        margin: 0 auto 0 52px;
+    }
+
+    &__item-name {
+        margin-top: 56px;
+        margin-bottom: 16px;
+    }
+
+    &__descr {
+        margin-bottom: 32px;
+    }
+
+    &__link {
+        position: relative;
+        font-size: 14px;
+        color: $blue4;
+        padding-right: 48px;
+        font-weight: 600;
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            transform: translateY(-50%) scale(1);
+            right: 0;
+            width: 24px;
+            height: 24px;
+            background: url(../img/arrow.svg) no-repeat center center;
+            transition: all .3s;
+        }
+
+        &:hover {
+            text-decoration: underline;
+
+            &::after {
+                transform: translateY(-50%) scale(1.2);
+            }
+        }
+    }
+}
