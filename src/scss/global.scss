@@ -16,6 +16,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
+  letter-spacing: 0.05em;
   color: $blue1;
 }
 
@@ -50,4 +51,18 @@ img {
   &:hover {
     background: darken($blue4, 6);
   }
+}
+
+h2 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
 }

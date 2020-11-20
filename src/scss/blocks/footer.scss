@@ -1,0 +1,125 @@
+.footer {
+    background-color: $blue2;
+    border-radius: 0px 200px 0px 0px;
+    margin-right: 95px;
+    padding-bottom: 60px;
+
+    &__top {
+        position: relative;
+        padding: 90px 0 95px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: calc(100% - 197px);
+            height: 1px;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            opacity: .4;
+        }
+    }
+
+    &__btn-talk {
+        position: absolute;
+        right: 197px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__title {
+        color: #fff;
+        width: 320px;
+        margin-bottom: 30px;
+    }
+
+    &__descr {
+        color: #fff;
+        opacity: .6;
+        width: 460px;
+    }
+
+    &__down {
+        padding: 95px 0 60px;
+        display: flex;
+        justify-content: flex-start;
+        color: #fff;
+    }
+
+    &__contacts {
+        margin-right: 100px;
+    }
+
+    &__main-link {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+    }
+
+    &__logo-img {
+        margin-right: 15px;
+    }
+
+    &__name {
+        display: inline-block;
+        margin: 0;
+        font-size: 28px;
+        line-height: 46px;
+        font-weight: 600;
+        letter-spacing: .02em;
+        color: #fff;
+    }
+
+    &__contact {
+        width: 300px;
+    }
+
+    &__contact-letter {
+        font-weight: 600;
+        margin-right: 16px;
+        vertical-align: text-top;
+    }
+
+    &__contact-link {
+        display: inline-block;
+        width: 250px;
+        color: #fff;
+
+        &:not(.footer__contact-link--address):hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__about {
+        margin-right: 75px;
+        width: 165px;
+    }
+
+    &__list-name {
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+    }
+
+    &__item {
+        margin-bottom: 16px;
+    }
+
+    &__item-link {
+        color: #fff;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__copyright {
+        color: #fff;
+        opacity: .4;
+        font-weight: 400;
+    }
+}
