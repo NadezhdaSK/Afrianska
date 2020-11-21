@@ -27,9 +27,9 @@
 
     &__nav-wrap {
         position: relative;
-        width: 1200px;
+        max-width: 1260px;
         margin: 0 auto;
-        padding: 40px 0;
+        padding: 40px 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -113,7 +113,7 @@
     }
 
     &__title {
-        width: 520px;
+        max-width: 520px;
         margin-bottom: 32px;
         font-family: 'Galien', 'Arial', sans-serif;
         font-size: 64px;
@@ -123,8 +123,66 @@
 
     &__descr {
         margin-bottom: 70px;
-        width: 430px;
-        letter-spacing: 0.05%;
+        max-width: 430px;
         opacity: .6;
+    }
+}
+
+@media (max-width: 1366px) {
+    .header {
+    
+        &--homepage {
+            background-position: 98% calc(50% + 30px);
+            background-size: 50%;
+        }
+    }
+}
+
+@media (max-width: 996px) {
+    .header {
+    
+        &--homepage {
+            background-position: 98% 100%;
+            background-size: 47%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+
+        &--homepage {
+            background-position: 50% 100%;
+            background-size: 50%;
+        }
+
+        &__nav-wrap {
+            padding: 20px 20px;
+        }
+
+        &__title {
+            margin-bottom: 25px;
+            font-size: 38px;
+            line-height: 50px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        &__descr {
+            margin-bottom: 40px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__wrap {
+            justify-content: flex-start;
+            margin-top: 0;
+        }
+
+        &__btn-project {
+            margin: 0 auto;
+        }
     }
 }
