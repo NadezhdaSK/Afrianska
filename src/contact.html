@@ -11,17 +11,18 @@
     <!-- header -->
 
     <header class="header">
-        <div class="container">
+        <div class="header__nav-wrap">
             <a href="index.html" class="header__logo">
-                <img src="img/logo.svg" alt="Логотип" class="header__logo-img" width="48" height="32">
+                <img src="img/logo-header.svg" alt="Логотип" class="header__logo-img" width="48" height="32">
             </a>
-            <button class="header__btn-nav" aria-hidden="Открыть меню"></button>
-            <nav class="header__nav"></nav>
-            <h1 class="header__title">New Automation Tool for Your Home</h1>
-            <p class="header__descr">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.
-            </p>
-            <a href="#" class="header__btn-project button">See Our Project</a>
+            <nav class="header__nav header__nav--closed">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact Us</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Link 2</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Link 3</a></li>
+                </ul>
+            </nav>
+            <button class="header__btn-nav" aria-label="Open menu"></button>
         </div>
     </header>
 
@@ -30,9 +31,9 @@
         <!-- ContactUs-header -->
 
         <section class="contactUs-header">
-            <h2 class="contactUs-header__title">
+            <h1 class="contactUs-header__title">
                 Contact Us
-            </h2>
+            </h1>
             <p class="contactUs-header__descr">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             </p>
@@ -52,26 +53,26 @@
                     </div>
                     <div class="contact-center__inner">
                         <h3 class="contact-center__name">phone</h3>
-                        <a href="tel:+6281273134321" class="contact-center__link">+62-812-7313-4321</a>
-                        <a href="tel:+628170001234" class="contact-center__link">+62-817-000-1234</a>
+                        <a href="tel:+6281273134321" class="contact-center__link contact-center__link--phone">+62-812-7313-4321</a>
+                        <a href="tel:+628170001234" class="contact-center__link contact-center__link--phone">+62-817-000-1234</a>
                     </div>
                     <div class="contact-center__inner">
                         <h3 class="contact-center__name">online service</h3>
-                        <a href="index.html" class="contact-center__link">www.afrianska.com</a>
-                        <a href="mailto:hello.afrian@gmail.com" class="contact-center__link">hello.afrian@gmail.com</a>
+                        <a href="index.html" class="contact-center__link contact-center__link--address">www.afrianska.com</a>
+                        <a href="mailto:hello.afrian@gmail.com" class="contact-center__link contact-center__link--email">hello.afrian@gmail.com</a>
                     </div>
                 </div>
 
                 <!-- form -->
 
-                <form action="" class="form">
+                <form action="#" class="contact-center__form form">
                     <h3 class="form__title">send us message</h3>
                     <label for="name" class="form__label">Full Name</label>
                     <input type="text" class="form__input" id="name" name="name" placeholder="Your Name">
                     <label for="email" class="form__label">Email</label>
                     <input type="email" class="form__input" id="email" name="email" placeholder="Email">
                     <label for="message" class="form__label">Message</label>
-                    <textarea type="text" class="form__input" id="message" name="message" placeholder="Your Message" rows="3">
+                    <textarea class="form__input form__input--textarea" id="message" name="message" placeholder="Your Message" rows="3"></textarea>
                     <button class="form__btn button" type="submit">submit</button>
                 </form>
             </div>
@@ -82,7 +83,7 @@
         </div>
     </main>
 
-    <!-- footer -->
+     <!-- footer -->
         
     <footer class="footer">
         <div class="footer__top">
@@ -94,64 +95,65 @@
                 </p>
             </div>
         </div>
-            <div class="container">
-                <div class="footer__down">
-                    <div class="footer__contacts">
-                        <a href="index.html" class="footer__main-link">
-                            <img src="img/logo.svg" alt="Логотип" class="footer__logo-img" width="48" height="32">
-                            <p class="footer__name">Afrianska</p>
-                        </a>
-                        <p class="footer__contact footer__contact--address">
-                            <span class="footer__contact-letter">A.</span>
-                            <p class="footer__contact-link">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </p>
-                        <p class="footer__contact footer__contact--phone">
-                            <span class="footer__contact-letter">T.</span>
-                            <a href="tel:+6281273134321" class="footer__contact-link">+62-812-7313-4321</a>
-                        </p>
-                        <p class="footer__contact footer__contact--email">
-                            <span class="footer__contact-letter">E</span>
-                            <a href="mailto:hello.afrian@gmail.com" class="footer__contact-link">hello.afrian@gmail.com</a>
-                        </p>
-                    </div>
-                    <div class="footer__about">
-                        <h3 class="footer__list-name">About US</h3>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="#" class="footer__item-link">About</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__item-link">What We Do</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__item-link">Project</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__item-link">How It Work With Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer__follow">
-                        <h3 class="footer__list-name">Follow US</h3>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="#" class="footer__item-link">Instagram</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__item-link">Facebook</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__item-link">LinkedIn</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__item-link">Youtube</a>
-                            </li>
-                        </ul>
-                    </div>
+        <div class="container">
+            <div class="footer__down">
+                <div class="footer__contacts">
+                    <a href="index.html" class="footer__main-link">
+                        <img src="img/logo.svg" alt="Логотип" class="footer__logo-img" width="48" height="32">
+                        <p class="footer__name">Afrianska</p>
+                    </a>
+                    <p class="footer__contact footer__contact--address">
+                        <span class="footer__contact-letter">A.</span>
+                        <span class="footer__contact-link footer__contact-link--address">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                    </p>
+                    <p class="footer__contact footer__contact--phone">
+                        <span class="footer__contact-letter">T.</span>
+                        <a href="tel:+6281273134321" class="footer__contact-link">+62-812-7313-4321</a>
+                    </p>
+                    <p class="footer__contact footer__contact--email">
+                        <span class="footer__contact-letter">E</span>
+                        <a href="mailto:hello.afrian@gmail.com" class="footer__contact-link">hello.afrian@gmail.com</a>
+                    </p>
                 </div>
-                <div class="footer__copyright">2019 © Afrianska. All rights reserved.</div>
+                <div class="footer__about">
+                    <h3 class="footer__list-name">About US</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__item-link">About</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__item-link">What We Do</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__item-link">Project</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__item-link">How It Work With Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__follow">
+                    <h3 class="footer__list-name">Follow US</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__item-link">Instagram</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__item-link">Facebook</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__item-link">LinkedIn</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__item-link">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <div class="footer__copyright">2019 © Afrianska. All rights reserved.</div>
         </div>
-</footer>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

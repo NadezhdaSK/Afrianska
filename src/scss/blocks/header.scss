@@ -1,7 +1,10 @@
 .header {
     position: relative;
-    height: 100vh;
-    background: url(../img/header.svg) no-repeat calc(50% + 320px) calc(50% + 30px);
+
+    &--homepage {
+        height: 100vh;
+        background: url(../img/header.svg) no-repeat calc(50% + 320px) calc(50% + 30px);
+    }
 
     &__gradient {
         position: absolute;

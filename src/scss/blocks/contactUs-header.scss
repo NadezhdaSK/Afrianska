@@ -1,0 +1,26 @@
+.contactUs-header {
+    background: #98D0FC url(../img/contact-bg.svg) no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 57px;
+
+    &__title {
+        width: 700px;
+        margin: 0 auto;
+        font-size: 44px;
+        line-height: 74px;
+        letter-spacing: 0.04em;
+        margin-bottom: 16px;
+    }
+
+    &__descr {
+        width: 780px;
+        margin: 0 auto;
+        letter-spacing: 0.04em;
+        opacity: .6;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
