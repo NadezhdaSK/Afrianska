@@ -44,8 +44,8 @@
         padding: 40px 0;
         width: 100%;
         color: #fff;
-        font-size: 20px;
-        line-height: 46px;
+        font-size: inherit;
+        line-height: inherit;
         letter-spacing: .02em;
 
         &:not(.client__link--more) {
@@ -54,6 +54,78 @@
 
         &:hover {
             background-color: rgba($blue1, .2);
+        }
+    }
+}
+
+@media (max-width: 997px) {
+    .client {
+        border-radius: 130px 0 0 0;
+
+        &__title {
+            width: 40%;
+            margin-right: 30px;
+        }
+
+        &__link {
+            padding: 30px 0;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .client {
+        
+        &__link {
+            padding: 25px 0;
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .client {
+        border-radius: 90px 0 0 0;
+        padding-top: 60px;
+
+        &__text {
+            margin-bottom: 50px;
+        }
+
+        &__title {
+            width: 50%;
+        }
+
+        &__table {
+            margin-bottom: 80px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .client {
+        padding-top: 40px;
+        border-radius: 60px 0 0 0;
+
+        &__title {
+            width: 100%;
+        }
+
+        &__text {
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        &__descr {
+            width: 100%;
+        }
+
+        &__table {
+            margin-bottom: 50px;
+        }
+
+        &__link {
+            padding: 10px;
+            min-height: 64px;
         }
     }
 }

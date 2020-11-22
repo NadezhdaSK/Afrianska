@@ -255,6 +255,10 @@
     .footer {
         padding-bottom: 30px;
         border-radius: 0 60px 0 0;
+
+        &__title {
+            width: 100%;
+        }
         
         &__btn-talk {
             position: relative;
