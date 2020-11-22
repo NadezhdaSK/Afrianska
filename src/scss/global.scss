@@ -41,6 +41,12 @@ img {
   }
 }
 
+@media (max-width: 575px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
 .button {
   display: flex;
   justify-content: center;
@@ -85,5 +91,15 @@ h3 {
   .button {
     width: 180px;
     height: 45px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
