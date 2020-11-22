@@ -24,3 +24,49 @@
         line-height: 30px;
     }
 }
+
+@media (max-width: 815px) {
+    .contactUs-header {
+        &__title {
+            width: 100%;
+        }
+    
+        &__descr {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contactUs-header {
+        padding: 30px 0;
+        margin-bottom: 45px;
+
+        &__title {
+            font-size: 30px;
+            line-height: 46px;
+        }
+    
+        &__descr {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .contactUs-header {
+        padding: 20px 0;
+        margin-bottom: 40px;
+
+        &__title {
+            font-size: 28px;
+            line-height: 32px;
+        }
+
+        &__descr {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}

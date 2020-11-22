@@ -48,3 +48,51 @@
         box-shadow: $shadow-blue;
     }
 }
+
+@media (max-width: 930px) {
+    .form {
+        padding: 45px 35px;
+        width: 60%;
+    }
+}
+@media (max-width: 768px) {
+    .form {
+        
+        &__title {
+            margin-bottom: 35px;
+        }
+
+        &__input {
+            padding: 14px 25px;
+            margin-bottom: 25px;
+        }
+
+        &__input--textarea {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 460px) {
+    .form {
+        padding: 35px 25px;
+
+        &__title {
+            margin-bottom: 25px;
+        }
+
+        &__label {
+            margin-bottom: 8px;
+        }
+
+        &__input {
+            margin-bottom: 18px;
+        }
+    }
+}
