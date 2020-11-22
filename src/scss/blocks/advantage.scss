@@ -91,3 +91,98 @@
         }
     }
 }
+
+@media (max-width: 996px) {
+    .advantage {
+        &__title {
+            left: 30px;
+        }
+    }
+}
+
+@media (max-width: 920px) {
+    .advantage {
+
+        &__list {
+            justify-content: space-between;
+        }
+
+        &__item:nth-child(even) {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 849px) {
+    .advantage {
+
+        &__item {
+            width: 48%;
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .advantage {
+
+        &__title {
+            width: 45%;
+        }
+
+        &__item {
+            width: 48%;
+            padding: 0 25px 30px;
+        }
+
+        &__item-name {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .advantage {
+        margin: 75px 0 0;
+
+        &__title {
+            position: static;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        &__item-name {
+            margin-top: 30px;
+        }
+
+        &__descr {
+            margin-bottom: 20px;
+        }
+
+        &__list {
+            display: block;
+            margin-bottom: 50px;
+        }
+
+        &__item {
+            margin: 0 auto;
+            width: 90%;
+            margin-bottom: 30px;
+        }
+
+        &__item:nth-child(even) {
+            transform: translateY(0);
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        &__img--man {
+            margin: 0 auto;
+            transform: translateX(-15px);
+        }
+
+        &__img--girl {
+            margin: 0 auto;
+            transform: translateX(-15px);
+        }
+    }
+}
