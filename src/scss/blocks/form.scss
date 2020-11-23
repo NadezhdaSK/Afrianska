@@ -33,6 +33,14 @@
         &:focus {
             border: 1px solid rgba($blue3, 1);
         }
+
+        &:invalid {
+            border: 1px solid rgba(red, .4);
+        }
+    }
+
+    &__input--error {
+        border: 1px solid red;
     }
 
     &__input--textarea {
@@ -52,9 +60,9 @@
 @media (max-width: 930px) {
     .form {
         padding: 45px 35px;
-        width: 60%;
     }
 }
+
 @media (max-width: 768px) {
     .form {
         
@@ -70,12 +78,6 @@
         &__input--textarea {
             margin-bottom: 40px;
         }
-    }
-}
-
-@media (max-width: 660px) {
-    .form {
-        width: 100%;
     }
 }
 

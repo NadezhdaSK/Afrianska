@@ -78,6 +78,10 @@
         &__text-block {
             width: 35%;
         }
+
+        &__form {
+            width: 60%;
+        }
     }
 }
 
@@ -135,6 +139,10 @@
 
         &__name {
             margin-top: 10px;
+        }
+
+        &__form {
+            width: 100%;
         }
     }
 }
