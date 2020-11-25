@@ -171,14 +171,18 @@
         border-radius: 10px;
         font-weight: 600;
         box-shadow: $shadow-blue;
+        text-align: left;
     }
 
     &__modal-close {
-        text-align: left;
+        padding: 0 10px;
+        cursor: pointer;
+        display: inline-block;
     }
 
     &__modal-title {
         margin-left: 30px;
+        text-align: center;
     }
 }
 
